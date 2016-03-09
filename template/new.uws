@@ -1,0 +1,13 @@
+//-----------------------------------------------------------------------------
+// Name:        @{@expand('%:t')@}@
+// Purpose:
+//
+// Author:      H.Nagayosi
+//
+// Created:     @{@strftime('%m/%d/%Y')@}@.
+// Copyright:   (c) H.Nagayosi @{@strftime('%Y')@}@
+// Licence:     <your licence>
+//-----------------------------------------------------------------------------
+Option Explicit
+
+MsgBox("Hello World")

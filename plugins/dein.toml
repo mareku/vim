@@ -1,0 +1,60 @@
+#
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# git clone 後実行すべきコマンドがある場合
+[[plugins]]
+repo = 'Shougo/vimproc'
+
+  [plugins.build]
+  windows = 'tools\\update-dll-mingw64'
+  cygwin  = 'make -f make_cygwin.mak'
+  mac     = 'make -f make_mac.mak'
+  linux   = 'make'
+  unix    = 'gmake'
+
+# スニペット
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'Shougo/neosnippet'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+# エクスプローラー
+[[plugins]]
+repo = 'Shougo/vimfiler.vim'
+
+# テンプレート
+#[[plugins]]
+#repo = 'vim-scripts/qtmplsel.vim'
+
+# バッファ
+[[plugins]]
+repo = 'vim-scripts/buftabs'
+
+# プログラムを実行
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+
+# 関数を一覧表示
+[[plugins]]
+repo = 'mareku/listoffunctions'
+
+# ファイル構文エラーチェック
+[[plugins]]
+repo = 'scrooloose/syntastic'
+
+# コメントアウト
+[[plugins]]
+repo = 'tyru/caw.vim'
+
+# インデントを可視化
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+
+# git
+[[plugins]]
+repo = 'tpope/vim-fugitive'

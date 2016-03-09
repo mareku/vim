@@ -1,0 +1,2 @@
+// C++テンプレート
+#include <iostream>
