@@ -6,7 +6,6 @@ let g:quickrun_config = {
   \ '_' : {
     \ 'outputter/buffer/close_on_empty' : 1,
     \ 'outputter/buffer/into' : 1,
-    \ 'hook/time/enable' : '1',
   \ },
   \ 'vb' : {
     \ 'command' : 'cscript',
@@ -32,11 +31,6 @@ let g:quickrun_config = {
   \ 'java' : {
     \ 'hook/output_encode/encoding' : 'sjis',
   \ },
-  \ 'html' : {
-    \ 'command' : 'open',
-    \ 'exec' : '%c %s',
-    \ 'outputter' : 'browser',
-  \ },
 \}
 
 "let g:quickrun_config._ = {
@@ -50,8 +44,8 @@ let g:quickrun_config = {
 "     \ 'cmdopt': '//Nologo',
 "     \ 'tempfile': '{tempname()}.vbs',
 "\}
-" quickrun を \runで実行
-"nmap <Leader>run :QuickRun<CR>
+" quickrun を \rで実行
+nmap <Leader>r <Plug>(quickrun)
 
 " quickrun を <C-c> で終了
 nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"

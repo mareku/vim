@@ -2,6 +2,7 @@
 " 2016/03/06
 " plugins.vim
 " ------------------------------------------------------------------------------
+filetype plugin indent off
 
 " プラグインがインストールされるディレクトリ
 let s:dein_dir = expand('$VIM/.vim/dein')
@@ -33,6 +34,8 @@ endif
 
 " 設定終了
 call dein#end()
+
+filetype plugin indent on
 
 " インストール開始
 if dein#check_install()
