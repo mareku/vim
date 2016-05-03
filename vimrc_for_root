@@ -1,0 +1,5 @@
+" 設定を分割
+" http://wakame.hatenablog.jp/entry/2014/09/05/085345
+set runtimepath+=$VIM/.vim/
+runtime! init/*.vim
+runtime! plugins/*.vim
